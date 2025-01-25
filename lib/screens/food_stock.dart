@@ -28,7 +28,7 @@ class FoodStockScreen extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: Text(
                 'Expiring Soon (within 3 days)',
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold,color: Colors.red,),
               ),
             ),
             ...soonExpiring.map((food) => _buildFoodItem(context, food)).toList(),
